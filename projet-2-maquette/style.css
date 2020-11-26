@@ -10,6 +10,9 @@ a {
     color: blue;
     margin: 10px;
 }
+.boldPolice {
+    font-weight: bold; 
+}
 ul {
     display: flex;
     flex-direction: row;
@@ -37,7 +40,9 @@ header img {
 nav {
     display: flex;
     justify-content: flex-end;
-    flex-direction: row;
+    flex-direction: row; 
+    position: relative;
+    right: 0;
 }
 
 /** FIN HEADER **/
@@ -93,12 +98,6 @@ nav {
     margin: 5px auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-}
-.blocs p {
-    font-weight: bold;
-}
-.blocs p small{
-    font-weight: bold;
 }
 
 /** FIN BLOCS **/
@@ -189,6 +188,7 @@ nav {
 }
 #activities p {
     text-align: left;
+    font-weight: bold;
 }
 .ssBloc img {
     width: 79%;
@@ -206,4 +206,11 @@ nav {
 /** FIN ACTIVITES **/
 footer {
     background-color: #f2f2f2;
+    display: flex;
+}
+.aPropos {
+    margin: 10px 250px 10px 20px;
+} 
+.nosHebergements, .assistance {
+    margin: 10px 250px;
 }
