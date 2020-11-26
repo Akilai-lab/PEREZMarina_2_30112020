@@ -1,13 +1,10 @@
+/** GENERAL **/
+
 body {
     font-family: 'Raleway', sans-serif;
 }
 h3 {
     font-weight: bold;
-}
-nav {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
 }
 a {
     color: blue;
@@ -18,9 +15,34 @@ ul {
     flex-direction: row;
 }
 li {
+    display: inherit;
     list-style-image: url(images/logo/star-regular.svg);
-    margin: 0 20px;
+    margin: 0 10px;
+    color: #0065FC;
 }
+
+/** FIN GENERAL **/
+/** HEADER **/
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+/*    justify-content: space-between;*/
+}
+header img {
+    width: 10%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+/** FIN HEADER **/
+/** Section RECHERCHE **/
+
 .filtres {
     display: flex;
     flex-direction: row;
@@ -35,11 +57,23 @@ li {
     border-radius: 10px;
     margin: 0 5px;
 }
+
+/** FIN section RECHERCHE **/
+/** HEBERGEMENTS **/
+
+#hebergements {
+    display: flex;
+    align-items: flex-start;
+}
+
+/** debut BLOCS **/
+
 .bloc {
     background-color: #f2f2f2;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 50%;
 }
 .bold {
     font-weight: bold;
@@ -50,33 +84,126 @@ li {
     width: 30%;
     display: flex;
     flex-direction: column;
+    margin: 7px auto;
+    background-color: #fff;
 /*    box-shadow: ;*/
 }
 .blocs img {
-    width: 90%;
-    height: 30%;
+    width: 97%;
     margin: 5px auto;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
+.blocs p {
+    font-weight: bold;
+}
+.blocs p small{
+    font-weight: bold;
+}
+
+/** FIN BLOCS **/
+/** debut POPULAR **/
+
 .popular {
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin: 0 30px;
+    border-radius: 20px;
+}
+.popular .blocs {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    margin: 5px;
+} 
+.popular .blocs img {
+    align-self: left;
+    width: 30%;
+    margin: 5px 0 0 5px;
+}
+.popular blocs ul{
+    margin-top: 60px;
+}
+.blocDivider {
+    margin-left: 30px;
+}
+
+/** FIN BLOCS **/
+/** debut ACTIVITES **/
+
+#activites {
+    display: flex;
+    flex-direction: row;
+}
+.bigPicture {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
-.blocs {
-    margin: 7px auto;
+.firstPicture {
+    border-radius: 10px;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    background-image: url("images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+}
+.secondPicture {
+    border-radius: 10px;
+    height: 150px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+}
+.thirdPicture {
+    border-radius: 10px;
+    height: 150px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+}
+.fourPicture {
+    border-radius: 10px;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    background-image: url("images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+}
+.fivePicture {
+    border-radius: 10px;
+    height: 150px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+}
+.sixPicture {
+    border-radius: 10px;
+    height: 150px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+}
+#activities p {
+    text-align: left;
+}
+.ssBloc img {
+    width: 79%;
+    height: 67%;
+}
+.ssBloc {
     background-color: #fff;
     border-radius: 7px;
-/*    box-shadow: ;*/  
+    margin: 0 10px;
+    max-width: 50%;
 }
-.ssBloc, .byTwoblocs {
-    margin: 0 7px;
-    background-color: #fff;
-    border-radius: 7px;
-/*    box-shadow: ;*/
+.byTwoblocs {
+    
 }
+/** FIN ACTIVITES **/
 footer {
     background-color: #f2f2f2;
 }
