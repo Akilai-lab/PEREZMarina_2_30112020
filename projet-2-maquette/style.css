@@ -4,26 +4,32 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 h3 {
+    font-weight: 700;
+    font-size: 20px;
+}
+.bold {
     font-weight: bold;
 }
 a {
-    color: blue;
+    color: #0065FC;
     margin: 10px;
+    text-decoration: none;
 }
 .boldPolice {
     font-weight: bold; 
 }
-ul {
+.stars {
     display: flex;
     flex-direction: row;
+    margin: 0px 0px 5px 7px;
 }
-li {
-    display: inherit;
-    list-style-image: url(images/logo/star-regular.svg);
-    margin: 0 10px;
-    color: #0065FC;
+.stars {
+    width: 7%;
 }
-
+.starsPopular {
+    display: flex;
+    width: 20%;
+}
 /** FIN GENERAL **/
 /** HEADER **/
 
@@ -38,29 +44,69 @@ header img {
 }
 
 nav {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row; 
-    position: relative;
-    right: 0;
+    margin: 0 auto;
 }
 
 /** FIN HEADER **/
 /** Section RECHERCHE **/
-
+.recherche {
+    padding: 7px;
+    display: flex;
+}
+.localisation {
+    background: #f2f2f2;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.localisation img {
+    width: 20px;
+    padding: 5px;
+    margin: 0 5px;
+}
+.input {
+    border: 1.5px solid #f2f2f2;
+    font-weight: bold;
+}
+.recherche .button {
+    background: #0065FC;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    border: none;
+    padding: 0 20px;
+}
 .filtres {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    margin: 20px auto;
 }
 .filtres p {
     font-weight: bold;
+    margin: 5px 15px;
 }
 .filtre {
+    display: flex;
+    align-items: center;
     background-color: #fff;
-    border-radius: 10px;
-    margin: 0 5px;
+    margin: 0 15px;
+    width: 250px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    border-left-style: hidden;
+    padding-bottom: 0px;
+    height: 55px;
+}
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #deebff;
+}
+.filtre img {
+    width: 50%;
 }
 
 /** FIN section RECHERCHE **/
@@ -68,7 +114,7 @@ nav {
 
 #hebergements {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 /** debut BLOCS **/
@@ -78,7 +124,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 50%;
+    width: 50%;
 }
 .bold {
     font-weight: bold;
@@ -91,7 +137,7 @@ nav {
     flex-direction: column;
     margin: 7px auto;
     background-color: #fff;
-/*    box-shadow: ;*/
+    box-shadow: 2px 2px #8080801c;
 }
 .blocs img {
     width: 97%;
@@ -99,11 +145,16 @@ nav {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+.blocs p {
+    margin: 0;
+    padding: 5px 7px;
+}
 
 /** FIN BLOCS **/
 /** debut POPULAR **/
 
 .popular {
+    width: 40%;
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
@@ -113,8 +164,9 @@ nav {
 .popular .blocs {
     display: flex;
     flex-direction: row;
-    width: 400px;
+    width: auto;
     margin: 5px;
+    box-shadow: 2px 2px #8080801c;
 } 
 .popular .blocs img {
     align-self: left;
@@ -143,48 +195,56 @@ nav {
 .firstPicture {
     border-radius: 10px;
     background-size: cover;
+    background-position: top;
     width: 300px;
-    height: 400px;
+    height: 500px;
     background-image: url("images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    box-shadow: 2px 2px #8080801c;
 }
 .secondPicture {
     border-radius: 10px;
-    height: 150px;
-    width: 200px;
+    height: 250px;
+    width: 300px;
     background-size: cover;
     background-position: center;
     background-image: url("images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    box-shadow: 2px 2px #8080801c;
 }
 .thirdPicture {
     border-radius: 10px;
-    height: 150px;
-    width: 200px;
+    height: 250px;
+    width: 300px;
     background-size: cover;
     background-position: center;
     background-image: url("images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    box-shadow: 2px 2px #8080801c;
 }
 .fourPicture {
     border-radius: 10px;
     background-size: cover;
+    background-position: center;
     width: 300px;
-    height: 400px;
+    height: 500px;
     background-image: url("images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    box-shadow: 2px 2px #8080801c;
 }
 .fivePicture {
     border-radius: 10px;
-    height: 150px;
-    width: 200px;
+    height: 250px;
+    width: 300px;
     background-size: cover;
     background-position: center;
     background-image: url("images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    box-shadow: 2px 2px #8080801c;
 }
 .sixPicture {
     border-radius: 10px;
-    height: 150px;
-    width: 200px;
+    height: 250px;
+    width: 300px;
     background-size: cover;
     background-position: center;
     background-image: url("images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    box-shadow: 2px 2px #8080801c;
 }
 #activities p {
     text-align: left;
