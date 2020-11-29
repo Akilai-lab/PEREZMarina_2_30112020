@@ -139,6 +139,15 @@ section {
     width: 50%;
 }
 
+.moreInformations {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 42px;
+}
+.moreInformations img {
+    width: 6%;
+}
 /** FIN section RECHERCHE **/
 /** HEBERGEMENTS **/
 
