@@ -8,15 +8,12 @@ h3 {
     font-size: 20px;
 }
 .bold {
-    font-weight: bold;
+    font-weight: 500;
 }
 a {
     color: #0065FC;
     margin: 10px;
     text-decoration: none;
-}
-.boldPolice {
-    font-weight: bold; 
 }
 .stars {
     display: flex;
@@ -30,25 +27,44 @@ a {
     display: flex;
     width: 20%;
 }
+.starsPopular img {
+    width: 15px;
+    height: 15px;
+}
 /** FIN GENERAL **/
 /** HEADER **/
 
 header {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
-/*    justify-content: space-between;*/
+    margin: 10px 50px;
+    padding: 30px 0; 
 }
 header img {
+    position: absolute;
+    left: 50px;
     width: 10%;
 }
 
 nav {
-    margin: 0 auto;
+    margin: 10px 50px;
 }
-
+nav a {
+    padding: 15px;
+}
+nav a:target {
+    border-top: 1px solid blue;
+}
 /** FIN HEADER **/
 /** Section RECHERCHE **/
+section {
+    margin: 10px 50px;
+}
+#hebergements {
+    margin: 10px 50px;
+}
 .recherche {
     padding: 7px;
     display: flex;
@@ -96,6 +112,11 @@ nav {
     padding-bottom: 0px;
     height: 55px;
 }
+.filtre:hover {
+    background: #f2f2f2;
+    color: #0065fc;
+}
+
 .circle {
     display: flex;
     align-items: center;
@@ -114,7 +135,6 @@ nav {
 
 #hebergements {
     display: flex;
-    align-items: center;
 }
 
 /** debut BLOCS **/
@@ -125,11 +145,18 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     width: 50%;
+    border-radius: 20px;
+}
+.bloc p.bold {
+    width: -webkit-fill-available;
+    margin-left: 15px;
 }
 .bold {
     font-weight: bold;
 }
 .blocs {
+    margin-top: 0px;
+    height: 250px;
     background-color: #fff;
     border-radius: 20px;
     width: 30%;
@@ -137,7 +164,58 @@ nav {
     flex-direction: column;
     margin: 7px auto;
     background-color: #fff;
-    box-shadow: 2px 2px #8080801c;
+    box-shadow: 1.5px 1.5px 5px 0px #8080803d;
+}
+.img1 {
+    background-image:url("images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    width: auto;
+    height: 120%;
+    background-size: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.img2 {
+    background-image:url("images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    width: auto;
+    height: 120%;
+    background-size: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.img3 {
+    background-image:url("images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    width: auto;
+    height: 120%;
+    background-size: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.img4 {
+    background-image:url("images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    width: auto;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.img5 {
+    background-image:url("images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    width: auto;
+    height: 120px;
+    background-size: cover;
+    background-position: inherit; 
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.img6 {
+    background-image:url("images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    width: auto;
+    height: 120px;
+    background-size: cover;
+        background-position: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 .blocs img {
     width: 97%;
@@ -149,7 +227,9 @@ nav {
     margin: 0;
     padding: 5px 7px;
 }
-
+.blocs a {
+    color: black;
+}
 /** FIN BLOCS **/
 /** debut POPULAR **/
 
@@ -161,19 +241,67 @@ nav {
     margin: 0 30px;
     border-radius: 20px;
 }
-.popular .blocs {
+.titreBloc {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 5px 80px;
+}
+.titreBloc img {
+    width: 5%;
+}
+.blobPop {
+    background: white;
+    border-radius: 20px;
+    margin: 5px 10px;
+    height: 156x;
+}
+.popular .blocPop a {
     display: flex;
     flex-direction: row;
     width: auto;
     margin: 5px;
     box-shadow: 2px 2px #8080801c;
+    color: black;
+    background: white;
+    border-radius: 20px;
+    margin: 5px 80px;
 } 
-.popular .blocs img {
-    align-self: left;
-    width: 30%;
+.imgPop1 {
+    background-image: url("images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+    background-position: inherit; 
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    margin: 5px;
+}
+.imgPop2 {
+    background-image: url("images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+    background-position: inherit; 
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    margin: 5px;
+}
+.imgPop3 {
+    background-image: url("images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+    background-position: center; 
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    margin: 5px;
+}
+.popular .blocPop .imgPop img {
+    width: inherit;
     margin: 5px 0 0 5px;
 }
-.popular blocs ul{
+.popular .blocPop ul{
     margin-top: 60px;
 }
 .blocDivider {
@@ -184,16 +312,20 @@ nav {
 /** debut ACTIVITES **/
 
 #activites {
-    display: flex;
-    flex-direction: row;
+    margin: 10px 50px;
 }
-.bigPicture {
+.picturesActivites {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+.picturesActivites p:first-child {
+    position: absolute;
+}
+.firstPicture, .fourPicture{
+    margin: 50px auto 0 auto;
 }
 .firstPicture {
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-size: cover;
     background-position: top;
     width: 300px;
@@ -202,25 +334,30 @@ nav {
     box-shadow: 2px 2px #8080801c;
 }
 .secondPicture {
-    border-radius: 10px;
-    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
     width: 300px;
     background-size: cover;
     background-position: center;
     background-image: url("images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
     box-shadow: 2px 2px #8080801c;
+    margin-top: 50px;
 }
 .thirdPicture {
-    border-radius: 10px;
-    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
     width: 300px;
     background-size: cover;
     background-position: center;
     background-image: url("images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
     box-shadow: 2px 2px #8080801c;
+    margin-top: 50px;
 }
 .fourPicture {
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-size: cover;
     background-position: center;
     width: 300px;
@@ -229,22 +366,42 @@ nav {
     box-shadow: 2px 2px #8080801c;
 }
 .fivePicture {
-    border-radius: 10px;
-    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
     width: 300px;
     background-size: cover;
     background-position: center;
     background-image: url("images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg");
     box-shadow: 2px 2px #8080801c;
+    margin-top: 50px;
 }
 .sixPicture {
-    border-radius: 10px;
-    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
     width: 300px;
     background-size: cover;
     background-position: center;
     background-image: url("images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
     box-shadow: 2px 2px #8080801c;
+    margin-top: 50px;
+}
+.bigPicture p {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1.5px 1.5px 5px 0px #8080803d;
+    padding: 10px;
+    margin-top: 0;
+    width: auto;
+}
+.ssBloc p {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1.5px 1.5px 5px 0px #8080803d;
+    padding: 10px;
+    margin-top: 0;
+    width: auto;
 }
 #activities p {
     text-align: left;
@@ -257,16 +414,15 @@ nav {
 .ssBloc {
     background-color: #fff;
     border-radius: 7px;
-    margin: 0 10px;
-    max-width: 50%;
+    height: 652px;
+    margin: 50px auto 0 auto;
 }
-.byTwoblocs {
-    
-}
+
 /** FIN ACTIVITES **/
 footer {
     background-color: #f2f2f2;
     display: flex;
+    margin: 10px 50px;
 }
 .aPropos {
     margin: 10px 250px 10px 20px;
