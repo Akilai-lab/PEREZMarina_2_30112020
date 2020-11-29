@@ -49,7 +49,7 @@ header img {
 }
 
 nav {
-    margin: 10px 50px;
+    margin: 10px 150px 10px 50px;
 }
 nav a {
     padding: 15px;
@@ -75,13 +75,15 @@ section {
     border-top-left-radius: 10px;
 }
 .localisation img {
-    width: 20px;
-    padding: 5px;
+    width: 15px;
+    padding: 10px;
     margin: 0 5px;
 }
 .input {
     border: 1.5px solid #f2f2f2;
     font-weight: bold;
+    padding-left: 10px;
+    font-size: 15px;
 }
 .recherche .button {
     background: #0065FC;
@@ -90,15 +92,22 @@ section {
     color: white;
     border: none;
     padding: 0 20px;
+    font-weight: bold;
+    font-size: 15px;
 }
 .filtres {
     display: flex;
     justify-content: flex-start;
     margin: 20px auto;
 }
+.filtre p {
+    font-weight: bold;
+    margin: 0px 15px;
+    font-size: 17px;
+}
 .filtres p {
     font-weight: bold;
-    margin: 5px 15px;
+    font-size: 17px;
 }
 .filtre {
     display: flex;
