@@ -85,15 +85,28 @@ section {
     padding-left: 10px;
     font-size: 15px;
 }
-.recherche .button {
+.recherche input.button {
     background: #0065FC;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     color: white;
     border: none;
-    padding: 0 20px;
+    width: 150px;
+    position: absolute;
+    height: 48px;
+}
+input.button {
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+.button p {
+    padding: 0 30px;
     font-weight: bold;
     font-size: 15px;
+    position: relative;
+    color: white;
+    margin-left: 0;
 }
 .filtres {
     display: flex;
@@ -447,4 +460,107 @@ footer {
 } 
 .nosHebergements, .assistance {
     margin: 10px 250px;
+}
+
+@media all and (max-width: 680px) {
+    header {
+        width: auto;
+        display: block;
+    }
+    header img {
+        width: 30%;
+    }
+    header nav {
+        display: flex;
+        justify-content: center;
+    }
+    header nav a {
+        margin: 10px 10px;
+        padding: 0px;
+    }
+    section {
+        width: auto;
+        margin: 10px;
+    }
+    .filtres {
+        flex-wrap: wrap;
+    }
+    .moreInformation {
+        right: 0;
+    }
+    .moreInformations img {
+        position: relative;
+        right: 30px;
+        width: 35%;
+    }
+    input.button {
+        display: flex;
+        align-items: center;
+        width: 30px;
+    }
+    .button p {
+        position: relative;
+        content: url("images/logo/search-solid.png");
+        width: 25px;
+        height: 25px;
+    }
+    #hebergements {
+        width: auto;
+        justify-content: center;
+        flex-direction: column-reverse;
+        margin: 10px;
+    }
+    .bloc {
+        display: block;
+    }
+    .blocs {
+        width: auto;
+        margin: 7px 5px;
+        height: 210px;
+    }
+    .popular, .bloc {
+        margin: 0;
+        width: auto;
+    }
+    .titreBloc {
+        margin: 5px 20px;
+    }
+    .blocPop {
+        width: auto;
+    }
+    .popular .blocPop a {
+        margin: 5px;
+    }
+    .blocDivider {
+        margin-left: 0;
+    }
+    .imgPop1, imgPop2, imgPop3 {
+        width: -moz-available;
+        height: 0;
+    }
+    #activites {
+        width: auto;
+        margin: 10px;
+    }
+    .bigPicture, .ssBloc {
+        width: auto;
+    }
+    .picturesActivites {
+        flex-direction: column;
+    }
+    .firstPicture, .secondPicture, .thirdPicture, .fourPicture, .fivePicture, .sixPicture {
+        height: 140px;
+        width: auto;
+    }
+    .ssBloc {
+        margin: 0; 
+        height: 500px;
+    }
+    footer {
+        display: block;
+        margin: 0;
+    }
+    .aPropos, .nosHebergements, .assistance {
+        margin: 0;
+    }
 }
