@@ -182,7 +182,7 @@ input.button {
     width: -webkit-fill-available;
     margin-left: 15px;
 }
-.bold {
+.bold, .bolder {
     font-weight: bold;
 }
 .blocs {
@@ -465,18 +465,28 @@ footer {
 @media all and (max-width: 680px) {
     header {
         width: auto;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
     }
     header img {
         width: 30%;
+        position: inherit;
     }
     header nav {
         display: flex;
         justify-content: center;
+        margin: 10px auto;
     }
     header nav a {
-        margin: 10px 10px;
+        margin: 10px auto;
         padding: 0px;
+    }
+    a.bolder {
+        align-self: end;
+        position: relative;
+        bottom: 95px;
+        font-weight: bold;
     }
     section {
         width: auto;
