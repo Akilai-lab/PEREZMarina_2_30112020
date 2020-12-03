@@ -178,7 +178,7 @@ input.button {
 
 /** debut BLOCS **/
 
-.bloc {
+.blockPart {
     background-color: #f2f2f2;
     display: flex;
     flex-direction: row;
@@ -188,14 +188,14 @@ input.button {
     border-radius: 20px;
     max-width: 50%;
 }
-.bloc p.bold {
+.blockPart p.bold {
     width: inherit;
     margin-left: 15px;
 }
 .bold, .bolder {
     font-weight: bold;
 }
-.blocs {
+.block {
     height: 200px;
     background-color: #fff;
     border-radius: 20px;
@@ -257,7 +257,7 @@ input.button {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
-.blocs img {
+.block img {
     width: auto;
     height: 120px;
     margin: 5px auto;
@@ -266,11 +266,11 @@ input.button {
     width: 15px;
     height: 15px;
 }
-.blocs p {
+.block p {
     margin: 0;
     padding: 5px 7px;
 }
-.blocs a {
+.block a {
     color: black;
 }
 /** FIN BLOCS **/
