@@ -3,7 +3,7 @@
 body {
     font-family: 'Raleway', sans-serif;
 }
-#hebergements {
+#accommodations {
     width:  auto; 
     margin: 10px 50px;
 }
@@ -66,7 +66,7 @@ nav a:target {
 }
 /** FIN HEADER **/
 /** Section RECHERCHE **/
-section,  #hebergements{
+section,  #accommodations{
     margin: 10px 50px;
 }
 .recherche {
@@ -112,12 +112,12 @@ input.button {
     color: white;
     margin-left: 0;
 }
-.filtres {
+.filters {
     display: flex;
     justify-content: flex-start;
     margin: 20px 15px;
 }
-.filtre p {
+.filter p {
     font-weight: bold;
     margin: 0px 15px;
     font-size: 17px;
@@ -131,7 +131,7 @@ input.button {
     font-weight: bold;
     font-size: 17px;
 }
-.filtre {
+.filter {
     display: flex;
     align-items: center;
     background-color: #fff;
@@ -142,7 +142,7 @@ input.button {
     height: 55px;
     margin: 0 15px;
 }
-.filtre:hover {
+.filter:hover {
     background: #f2f2f2;
     color: #0065fc;
 }
@@ -156,7 +156,7 @@ input.button {
     border-radius: 50%;
     background-color: #deebff;
 }
-.filtre img {
+.filter img {
     width: 50%;
 }
 
@@ -189,7 +189,7 @@ input.button {
     max-width: 50%;
 }
 .bloc p.bold {
-    width: -webkit-fill-available;
+    width: inherit;
     margin-left: 15px;
 }
 .bold, .bolder {
@@ -356,9 +356,6 @@ input.button {
 .picturesActivites {
     display: flex;
 }
-.picturesActivites p:first-child {
-    position: absolute;
-}
 .firstPicture, .fourPicture{
     margin: 50px auto 0 auto;
 }
@@ -497,10 +494,10 @@ footer {
         align-items: flex-start;
         flex-direction: column;
     }
-    .filtres {
+    .filters {
         flex-wrap: wrap;
     }
-    .filtre {
+    .filter {
         margin: 0 15px 15px 0;
     }
     .moreInformation {
@@ -526,7 +523,7 @@ footer {
         width: 25px;
         height: 25px;
     }
-    #hebergements {
+    #accommodations {
         width: auto;
         justify-content: center;
         flex-direction: column-reverse;
@@ -535,9 +532,11 @@ footer {
     .bloc {
         display: block;
         background-color: white;
+        max-width: inherit;
     }
     .blocs {
         width: auto;
+        height: 220px;
         margin: 7px 5px;
         display: flex;
     }
@@ -555,7 +554,7 @@ footer {
         border-radius: 0;
     } 
     .popular .blocPop a {
-        margin: 5px;
+        margin: 5px auto;
     }
     .blocDivider {
         max-width: 50%;
@@ -564,14 +563,14 @@ footer {
         width: 155.5px;
     }
     .starsPopular {
-        margin-top: 60px;
+        margin-top: 0;
     }
     .stars {
         width: 5%;
     }
-    #activites {
+    section #activites {
         width: auto;
-        margin: 10px;
+        margin: auto;
     }
     .bigPicture, .ssBloc {
         width: auto;
