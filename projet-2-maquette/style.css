@@ -294,13 +294,13 @@ input.button {
 .titleBlock img {
     width: 5%;
 }
-.blobPop {
+.popularBlock {
     background: white;
     border-radius: 20px;
     margin: 5px 10px;
     height: 156x;
 }
-.popular .blocPop a {
+.popular .popularBlock a {
     display: flex;
     flex-direction: row;
     width: 345px;
@@ -529,31 +529,31 @@ footer {
         flex-direction: column-reverse;
         margin: 10px;
     }
-    .bloc {
+    .blockPart {
         display: block;
         background-color: white;
         max-width: inherit;
     }
-    .blocs {
+    .block {
         width: auto;
         height: 220px;
         margin: 7px 5px;
         display: flex;
     }
-    .popular, .bloc {
+    .popular, .blockPart {
         margin: 0;
         width: auto;
     }
     .titleBlock {
         margin: 5px 20px;
     }
-    .blocPop {
+    .popularBlock {
         width: auto;
     }
     .popular {
         border-radius: 0;
     } 
-    .popular .blocPop a {
+    .popular .popularBlock a {
         margin: 5px auto;
     }
     .blocDivider {
