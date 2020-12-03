@@ -4,7 +4,8 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 #accommodations {
-    width:  auto; 
+    display: flex;
+    width:  100%; 
     margin: 10px 50px;
 }
 h3 {
@@ -181,85 +182,35 @@ input.button {
 .blockPart {
     background-color: #f2f2f2;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    width: 883px;
-    height: 628px;
     border-radius: 20px;
-    max-width: 50%;
+    width: 50%;
 }
-.blockPart p.bold {
-    width: inherit;
+.firstTitleBlock p.bold {
     margin-left: 15px;
+    color: black;
 }
 .bold, .bolder {
     font-weight: bold;
 }
 .block {
-    height: 200px;
     background-color: #fff;
     border-radius: 20px;
-    width: 250px;
+    width: 33%;
     display: flex;
     flex-direction: column;
     margin: 7px auto;
     background-color: #fff;
     box-shadow: 1.5px 1.5px 5px 0px #8080803d;
 }
-.img1 {
-    background-image:url("images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+.img1, .img2, .img3, .img4, .img5, .img6 {
     width: auto;
-    height: 100%;
-    background-size: cover;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-.img2 {
-    background-image:url("images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-    width: auto;
-    height: 100%;
-    background-size: cover;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-.img3 {
-    background-image:url("images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-    width: auto;
-    height: 100%;
-    background-size: cover;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-.img4 {
-    background-image:url("images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-    width: auto;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-.img5 {
-    background-image:url("images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-    width: auto;
-    height: 100%;
-    background-size: cover;
-    background-position: inherit; 
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-.img6 {
-    background-image:url("images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-    width: auto;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
 .block img {
-    width: auto;
-    height: 120px;
+    width: 100%;
+    height: auto;
     margin: 5px auto;
 }
 .stars img {
@@ -267,6 +218,7 @@ input.button {
     height: 15px;
 }
 .block p {
+    color: black;
     margin: 0;
     padding: 5px 7px;
 }
@@ -283,7 +235,7 @@ input.button {
     margin: 0 36px;
     border-radius: 20px;
     padding-bottom: 20px;
-    width: auto;
+    width: 50%;
 }
 .titleBlock {
     display: flex;
@@ -303,8 +255,6 @@ input.button {
 .popular .popularBlock a {
     display: flex;
     flex-direction: row;
-    width: 345px;
-    height: 148px;
     margin: 5px;
     box-shadow: 2px 2px #8080801c;
     color: black;
@@ -312,36 +262,16 @@ input.button {
     border-radius: 20px;
     margin: 10px 80px;
 } 
-.imgPop1 {
-    background-image: url("images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-    width: 133px;
-    height: 140px;
-    background-size: cover;
-    background-position: inherit; 
+.imgPop1, .imgPop2, .imgPop3 {
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     margin: 5px;
 }
-.imgPop2 {
-    background-image: url("images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg");
-    width: 133px;
-    height: 140px;
-    background-size: cover;
-    background-position: inherit; 
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    margin: 5px;
+.popularBlock img {
+    width: 100%;
+    height: auto;
 }
-.imgPop3 {
-    background-image: url("images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-    width: 133px;
-    height: 140px;
-    background-size: cover;
-    background-position: center; 
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    margin: 5px;
-}
+
 .popular .blocDivider {
     width: 60%;
     padding: 8px;
