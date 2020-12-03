@@ -285,13 +285,13 @@ input.button {
     padding-bottom: 20px;
     width: auto;
 }
-.titreBloc {
+.titleBlock {
     display: flex;
     justify-content: space-between;
     align-content: center;
     margin: 5px 80px;
 }
-.titreBloc img {
+.titleBlock img {
     width: 5%;
 }
 .blobPop {
@@ -544,7 +544,7 @@ footer {
         margin: 0;
         width: auto;
     }
-    .titreBloc {
+    .titleBlock {
         margin: 5px 20px;
     }
     .blocPop {
