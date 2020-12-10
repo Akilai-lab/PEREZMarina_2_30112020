@@ -360,7 +360,7 @@ button {
     background-position: center;
     background-image: url("images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
     box-shadow: 2px 2px #8080801c;
-    margin: 10px 0 0 0;
+    margin-top: 10px;
 }
 .fourPicture {
     border-top-left-radius: 10px;
@@ -391,13 +391,13 @@ button {
     background-position: center;
     background-image: url("images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
     box-shadow: 2px 2px #8080801c;
-    margin: 10px 0 0 0;
+    margin-top: 10px;
 }
 .bigPicture h2 {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 1.5px 1.5px 5px 0px #8080803d;
-    padding: 10px 0;
+    padding: 10px 0px;
     margin-top: 0;
     width: auto;
 }
@@ -405,7 +405,7 @@ button {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 1.5px 1.5px 5px 0px #8080803d;
-    padding: 10px 0;
+    padding: 10px 0px;
     margin-top: 0;
     width: auto;
 }
