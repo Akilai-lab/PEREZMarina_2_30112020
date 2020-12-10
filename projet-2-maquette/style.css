@@ -329,7 +329,7 @@ button {
     width: auto;
 }
 .bigPicture, .ssBloc {
-    width: 18%;
+    width: 20%;
 }
 .firstPicture {
     border-top-left-radius: 10px;
@@ -360,7 +360,7 @@ button {
     background-position: center;
     background-image: url("images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
     box-shadow: 2px 2px #8080801c;
-    margin: 10px 0;
+    margin: 10px 0 0 0;
 }
 .fourPicture {
     border-top-left-radius: 10px;
@@ -391,13 +391,13 @@ button {
     background-position: center;
     background-image: url("images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
     box-shadow: 2px 2px #8080801c;
-    margin: 10px 0;
+    margin: 10px 0 0 0;
 }
 .bigPicture h2 {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 1.5px 1.5px 5px 0px #8080803d;
-    padding: 10px;
+    padding: 10px 0;
     margin-top: 0;
     width: auto;
 }
@@ -405,7 +405,7 @@ button {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 1.5px 1.5px 5px 0px #8080803d;
-    padding: 10px;
+    padding: 10px 0;
     margin-top: 0;
     width: auto;
 }
@@ -538,7 +538,7 @@ footer {
         margin: 0;
     }
     .filter {
-        margin: 0 15px 15px 0;
+        margin: 0 10px 15px 0;
     }
     .moreInformations {
         position: inherit;
@@ -640,7 +640,12 @@ footer {
     .firstPicture, .secondPicture, .thirdPicture, .fourPicture, .fivePicture, .sixPicture {
         height: 140px;
         width: auto;
-        margin: 7px 5px;
+    }
+    .bigPicture h2 {
+        margin-left: 0;
+    }
+    .ssBloc h2 {
+        margin-left: 0;
     }
     .ssBloc {
         margin: 0; 
