@@ -14,7 +14,6 @@ h1 {
 }
 .bold {
     font-weight: 500;
-    margin: 0 auto;
 }
 a {
     color: black;
@@ -31,7 +30,7 @@ a {
 }
 .starsPopular {
     display: flex;
-    width: 20%;
+    height: auto;
 }
 .starsPopular img {
     width: 15px;
@@ -218,6 +217,8 @@ button {
 }
 .block a {
     margin: 5px;
+    cursor: pointer; 
+    text-decoration: none;
 }
 .block a .blocDivider {
     padding: 5px;
@@ -235,6 +236,7 @@ button {
     border-top-left-radius: 20px;
     object-fit: cover;
 }
+
 .stars img {
     width: 15px;
     height: 15px;
@@ -243,6 +245,9 @@ button {
     color: black;
     margin: 0;
     padding: 5px 7px;
+}
+.boldParagraph {
+    font-weight: bold;
 }
 .block a {
     color: black;
@@ -257,6 +262,7 @@ button {
     border-radius: 20px;
     padding-bottom: 20px;
     width: 35%;
+    height: 60%;
 }
 .titleBlock {
     display: flex;
@@ -274,8 +280,8 @@ button {
 }
 
 .popularBlock {
-    width: 70%;
-    height: 150px;
+    width: 80%;
+    height: auto;
     background: white;
     border-radius: 20px;
     margin: 10px auto;
@@ -287,18 +293,14 @@ button {
     flex-direction: row;
     margin: 5px;
     color: black;
+    cursor: pointer; 
+    text-decoration: none;
 } 
-.imgPop1, .imgPop2 {
-    width: 40%;
+.imgPop1, .imgPop2, .imgPop3 {
+    width: 30%;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
-    height: 140px;
-}
-.imgPop3 {
-    width: 40%;
-    height: 140px;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
+    height: auto;
 }
 .imgPop {
     width: 100%;
@@ -309,7 +311,10 @@ button {
 }
 
 .popular .blocDivider {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
     padding: 8px;
 }
 
@@ -435,7 +440,7 @@ footer {
     margin: 10px auto;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (min-width: 680px) and (max-width: 1024px) {
     .filtersPart {
         flex-wrap: wrap;
     }
@@ -455,6 +460,12 @@ footer {
         display: initial;
         padding: 10px;
     }
+    section h2 {
+        font-size: 14px;
+    }
+    section p {
+        font-size: 14px;
+    }
     #accommodations {
         flex-direction: column;
     }
@@ -470,6 +481,16 @@ footer {
         width: 80%;
         margin: 10px auto;
     }
+    .popular .titleBlock {
+        width: 80%;
+        margin: auto;
+    }
+    .popularBlock {
+        height: 140px;
+    }
+    .imgPop {
+        height: -webkit-fill-available;
+    }
     footer {
         justify-content: space-around;
     }
@@ -477,36 +498,45 @@ footer {
         margin: 0;
     }
 }
-@media all and (max-width: 680px) {
+@media all and (min-width: 300px ) and (max-width: 680px) {
     header {
+        padding: 0;
         width: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
     header img {
-        width: 30%;
+        width: 40%;
         order: 1;
         position: initial;
     }
     header nav {
         width: 100%;
-        margin: 20px 0;
         order: 3;
     }
     header nav a {
-        padding: 0 0 15px 0;
+        padding: 0px;
         border-top: none;
         border-bottom: 1px solid #f2f2f2;
-        width: 50%;
+        width: 100%;
         text-align: center;
-        margin: 0px;
+        margin: auto;
+    }
+    .bold {
+        margin: auto;
     }
     nav a:hover {
-        padding: 0 0 15px 0;
         border-top: none;
         border-bottom: 1px solid #0065FC;
         color: #0065FC;
+    }
+    header, section, .recherche, #accommodations {
+        margin: 0;
+    }
+    .recherche {
+        padding: 0;
+        height: auto;
     }
     #accommodations {
         flex-direction: column-reverse;
@@ -522,11 +552,11 @@ footer {
         order: 2;
         align-self: flex-end;
     }
+    input.input {
+        width: 60%;
+    } 
     section {
         width: auto;
-    }
-    .recherche {
-        margin: 0 auto;
     }
     .FiltersPart {
         align-items: flex-start;
@@ -551,7 +581,7 @@ footer {
         margin-left: 15px; 
     }
     button {
-        width: 20%;
+        width: 15%;
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
     }
@@ -568,7 +598,6 @@ footer {
         width: auto;
         justify-content: center;
         flex-direction: column-reverse;
-        margin: 10px;
     }
     .blockPart {
         display: block;
@@ -582,16 +611,24 @@ footer {
     .block {
         width: auto;
         height: auto;
-        margin: 7px 5px;
+        margin: 5px 0;
         display: flex;
     }
-    .popular, .blockPart {
+    .block a .img {
+        height: 125px;
+    }
+    .blocDivider h2.boldAccommodations {
         margin: 0;
+    }
+    .popular, .blockPart {
+        margin: 5px;
         width: auto;
     }
     .titleBlock {
-        margin: 5% 9%;
-        width: auto;
+        margin: 15px auto;
+        width: 90%;
+        justify-content: space-between;
+        align-items: baseline;
     }
     .popular {
         border-radius: 0;
@@ -599,26 +636,54 @@ footer {
     .titleBlock p.bold {
         margin: 0;
     }
+    .titleBlock img {
+        width: 7%;
+    }
     .popularBlock {
         width: 90%;
+        height: 140px;
+        margin: 20px auto;
     }
     .popular .popularBlock a {
         margin: 5px;
+        width: auto;
+        height: 150px;
+    }
+    .popular .popularBlock a p {
+        font-size: 14px;
+    }
+    .popular .popularBlock a h2 {
+        font-size: 14px;
+    }
+    .popular .blocDivider {
+        width: 65%;
+    }
+    .blocDivider p {
+        margin: 5px 0;
+    }
+    h2.bold {
+        margin: auto;
     }
     .ssBlock {
         width: auto;
     }
-    .imgPop1, .imgPop2 {
-        width: 50%;
+    .imgPop1, .imgPop2, .imgPop3 {
+        width: 45%;
+        max-height: 140px;
+        margin: 2px;
+        height: inherit;
     }
-    .imgPop3 {
-        width: 50%;
+    .imgPop {
+        height: 90%;
     }
     .starsPopular {
-        margin-top: 0;
+        margin: 25% 0;
     }
     .stars {
         width: 5%;
+    }
+    .boldParagraph {
+        visibility: hidden;
     }
     #activites {
         width: auto;
@@ -635,17 +700,18 @@ footer {
     }
     .picturesActivites {
         flex-direction: column;
-        margin: 7px 5px;
+        margin: 0;
     }
     .firstPicture, .secondPicture, .thirdPicture, .fourPicture, .fivePicture, .sixPicture {
         height: 140px;
         width: auto;
+        margin-top: 10px;
     }
-    .bigPicture h2 {
-        margin-left: 0;
+    .bigPicture h2.boldPolice {
+        margin: 0;
     }
-    .ssBloc h2 {
-        margin-left: 0;
+    .ssBloc h2.boldPolice {
+        margin: 0;
     }
     .ssBloc {
         margin: 0; 
