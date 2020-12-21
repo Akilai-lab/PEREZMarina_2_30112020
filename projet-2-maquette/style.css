@@ -483,13 +483,17 @@ footer {
     }
     .popular .titleBlock {
         width: 80%;
-        margin: auto;
+        margin: 25px auto;
+    }
+    .titleBlock img {
+        width: 6%;
     }
     .popularBlock {
         height: 140px;
     }
     .imgPop {
         height: -webkit-fill-available;
+        margin-top: 5px;
     }
     footer {
         justify-content: space-around;
