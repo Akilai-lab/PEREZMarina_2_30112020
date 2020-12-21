@@ -343,7 +343,7 @@ button {
     background-position: top;
     width: auto;
     height: 448px;
-    background-image: url("images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    background-image: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
     box-shadow: 2px 2px #8080801c;
 }
 .secondPicture {
@@ -353,7 +353,7 @@ button {
     height: 43%;
     background-size: cover;
     background-position: center;
-    background-image: url("images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
     box-shadow: 2px 2px #8080801c;
 }
 .thirdPicture {
@@ -363,7 +363,7 @@ button {
     height: 200px;
     background-size: cover;
     background-position: center;
-    background-image: url("images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-image: url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
     box-shadow: 2px 2px #8080801c;
     margin-top: 10px;
 }
@@ -374,7 +374,7 @@ button {
     background-position: center;
     width: auto;
     height: 448px;
-    background-image: url("images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-image: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
     box-shadow: 2px 2px #8080801c;
 }
 .fivePicture {
@@ -384,7 +384,7 @@ button {
     width: auto;
     background-size: cover;
     background-position: center;
-    background-image: url("images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-image: url("images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
     box-shadow: 2px 2px #8080801c;
 }
 .sixPicture {
@@ -394,7 +394,7 @@ button {
     width: auto;
     background-size: cover;
     background-position: center;
-    background-image: url("images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-image: url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
     box-shadow: 2px 2px #8080801c;
     margin-top: 10px;
 }
@@ -615,7 +615,7 @@ footer {
         display: flex;
     }
     .block a .img {
-        height: 125px;
+        height: 170px;
     }
     .blocDivider h2.boldAccommodations {
         margin: 0;
@@ -656,28 +656,33 @@ footer {
         font-size: 14px;
     }
     .popular .blocDivider {
-        width: 65%;
+        justify-content: end;
+        width: 67%;
     }
     .blocDivider p {
         margin: 5px 0;
     }
     h2.bold {
-        margin: auto;
+        margin: 0;
     }
     .ssBlock {
         width: auto;
     }
     .imgPop1, .imgPop2, .imgPop3 {
-        width: 45%;
-        max-height: 140px;
-        margin: 2px;
-        height: inherit;
+        width: 40%;
+        max-height: 100%;
     }
     .imgPop {
-        height: 90%;
+        height: 87%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .imgPop img {
+        max-width: 78%;
     }
     .starsPopular {
-        margin: 25% 0;
+        padding: 20% 0;
     }
     .stars {
         width: 5%;
@@ -702,10 +707,37 @@ footer {
         flex-direction: column;
         margin: 0;
     }
-    .firstPicture, .secondPicture, .thirdPicture, .fourPicture, .fivePicture, .sixPicture {
-        height: 140px;
+    .firstPicture, .fourPicture {
+        height: 190px;
         width: auto;
         margin-top: 10px;
+        background-size: 100%;
+        background-position: left 25%;
+        background-repeat: no-repeat;
+    }
+    .secondPicture {
+        height: 190px;
+        width: auto;
+        margin-top: 10px;
+        background-size: cover;
+        background-position: left 45%;
+        background-repeat: no-repeat;
+    }
+    .fivePicture {
+        height: 190px;
+        width: auto;
+        margin-top: 10px;
+        background-size: cover;
+        background-position: left 20%;
+        background-repeat: no-repeat;
+    }
+    .thirdPicture, .sixPicture {
+        height: 190px;
+        width: auto;
+        margin-top: 10px;
+        background-size: cover;
+        background-position: left 25%;
+        background-repeat: no-repeat;
     }
     .bigPicture h2.boldPolice {
         margin: 0;
