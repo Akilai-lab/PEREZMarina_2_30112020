@@ -7,19 +7,19 @@ body {
     display: flex;
     width:  100%; 
     margin: 10px 50px;
-}
+} /* Section d'une taille de 100%, d'un margin top et bottom de 10px et right et left de 50px. Positionnement flex pour un placement des blocs enfants côte à côte */
 h1 {
     font-weight: 700;
     font-size: 20px;
 }
 .bold {
     font-weight: 500;
-}
+} /* class bold des liens de navigation menant aux sections */
 a {
     color: black;
     margin: 10px;
     text-decoration: none;
-}
+} /* couleur des liens ayant un margin global de 10px et absence de surlignement des liens */
 .stars {
     display: flex;
     flex-direction: row;
@@ -44,7 +44,7 @@ header {
     align-items: center;
     padding: 30px 0; 
     margin: 10px 50px;
-}
+} /* bloc header contenant une image, un bloc de navigations aux sections suivantes avec une propriété flex pour un agencement optimal */
 
 header img {
     position: absolute;
@@ -55,17 +55,17 @@ header img {
 nav {
     display: flex;
     flex-direction: row;
-}
+} /* bloc de navigations contenant 2 liens, positionnement  */
 nav a {
     padding: 15px;
-}
+} /* placement des liens */
 .blueText {
     color: #0065FC;
 }
 nav a:hover {
     border-top: 1px solid #0065FC;
     color: #0065FC;
-}
+} /* effet a survol des liens bordure top et de couleur bleue */
 /** FIN HEADER **/
 /** Section RECHERCHE **/
 section,  #accommodations{
@@ -170,7 +170,7 @@ button {
 
 #accommodations {
     display: flex;
-}
+} /* Propriété permettant de placer les blocs l'uns à côté de l'autre sachant que le premier a une margin right de 5% */
 
 /** debut BLOCS **/
 
@@ -181,7 +181,7 @@ button {
     border-radius: 20px;
     width: 55%;
     margin-right: 5%;
-}
+} /* bloc d'une taille de 55% avec une propriété flex wrap pour forçer les blocs enfants à aller à la ligne.*/
 .blockPart p.bold {
     margin: 30px 15px;
 }
@@ -202,7 +202,7 @@ button {
 .blocks {
     display: flex;
     flex-wrap: wrap;
-}
+} /* bloc enfant avec une propriété wrap et contenant un ss bloc nommé block*/
 .block {
     background-color: #fff;
     width: 29%;
@@ -212,7 +212,7 @@ button {
     margin: 15px;
     background-color: #fff;
     box-shadow: 1.5px 1.5px 5px 0px #8080803d;
-}
+} /* bloc enfant de blocks ayant une taille de 29 %. Utilisation de % et non de px pour une responsive simplifiée*/
 .block a {
     margin: 5px;
     cursor: pointer; 
@@ -226,14 +226,14 @@ button {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     height: 135px;
-}
+} /* bloc destiné à l'image d'aperçu avec une hauteur fixe de 135px */
 .img img {
     width: 100%;
     height: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     object-fit: cover;
-}
+} /* image d'aperçu avec une largeur et hauteur de 100 % pour utiliser tout l'espace du contenant*/
 
 .stars img {
     width: 15px;
@@ -466,7 +466,7 @@ footer {
     }
     #accommodations {
         flex-direction: column;
-    }
+    } /* placement en colonne en responsive pour tablette, hebergement au dessus du bloc des plus populaires*/
     .blockPart {
         width: auto;
         justify-content: center;
@@ -507,7 +507,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-    }
+    } /* En version mobile : padding de 0 pour un placement en haut de page avec une taille prenant toute la largeur de la page, et une propriété flex wrap pour forcer les éléments à aller à la ligne */
     header img {
         width: 40%;
         order: 1;
@@ -516,7 +516,7 @@ footer {
     header nav {
         width: 100%;
         order: 3;
-    }
+    } /* ordre de placement en 3ème position dans le header pour être positionné à la ligne (via propriété flex wrap) et d'une taille de 100% */
     header nav a {
         padding: 0px;
         border-top: none;
@@ -524,7 +524,7 @@ footer {
         width: 100%;
         text-align: center;
         margin: auto;
-    }
+    } /* placement des liens côte à côte pour être fidèle à la maquette et d'une bordure bordure légérement grisée. Suppression de bordure top et utilisation de margin auto pour un positionnement centré */
     .bold {
         margin: auto;
     }
@@ -532,7 +532,7 @@ footer {
         border-top: none;
         border-bottom: 1px solid #0065FC;
         color: #0065FC;
-    }
+    } /* effet au survol d'une bordure bottom de couleur bleue */
     header, section, .recherche, #accommodations {
         margin: 0;
     }
@@ -600,7 +600,7 @@ footer {
         width: auto;
         justify-content: center;
         flex-direction: column-reverse;
-    }
+    } /* placement des blocs enfants en colonne avec un sens inversé à celui prédéfini dans le code html */
     .blockPart {
         display: block;
         background-color: white;
@@ -618,7 +618,7 @@ footer {
     }
     .block a .img {
         height: 170px;
-    }
+    } /*hauteur de 170px  au lieu de 135 comme en responsive d'écran d'ordinateur pour une facilité visuelle en responsive*/
     .blocDivider h2.boldAccommodations {
         margin: 0;
     }
